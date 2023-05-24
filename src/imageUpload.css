@@ -1,0 +1,22 @@
+.image__upload{
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    border-top:  1px solid gray;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+
+
+    /* background-color: black; */
+}
+.caption__field{
+    width:12rem;
+    height:2rem;
+}
+.browse_btn{
+    
+    margin-left:5px;
+}

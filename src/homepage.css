@@ -1,0 +1,70 @@
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.home-text {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+  font-family: 'Billabong', cursive;
+  /* animation: slide-in 2s linear infinite; */
+}
+
+.home-text span {
+  display: inline-block;
+  animation: appear 1s ease-in-out both;
+  padding-left:10px;
+}
+
+.home-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.home-text span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.home-text span:nth-child(3) {
+  animation-delay: 2s;
+}
+.home-text span:nth-child(4) {
+  animation-delay: 3s;
+  padding-left:0px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.enter-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(to right, #fd5e53, #ff7a5a, #ff9f61);
+  transition: background-color 0.3s ease;
+  font-family: 'Billabong', cursive;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+}
+
+.enter-btn:hover {
+  background-color: #e60000;
+}
